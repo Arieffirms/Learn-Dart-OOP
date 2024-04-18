@@ -11,6 +11,8 @@ class Person {
   // ini adalah yang di sebut named constructor karena constructor hanya bisa di gunakan dengan 1 kelas
   Person.withAddres (this.addres);
 
+  Person.withName (this.name);
+
 }
 
 void main () {
@@ -18,4 +20,8 @@ void main () {
 
   Person personaddres =  Person.withAddres("Jogjakarta");
   print(personaddres.addres);
+
+  var personname = Person.withName("ariiffefe");
+  print(personname.name);
+  print(personname.addres); // ini akan null
 }
