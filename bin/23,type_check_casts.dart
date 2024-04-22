@@ -14,10 +14,18 @@ class VicePrecident extends Manager {
   VicePrecident(String name) : super(name);
 
 }
-  // jika menggunakan method
-  void SayHello(Employee employee) {
-    print("halooo ${employee.name}");
+// jika menggunakan method
+void SayHello(Employee employee) {
+  if(employee is VicePrecident) {
+    VicePrecident vicePrecident = employee as VicePrecident;
+    print("hello vp ${vicePrecident.name}");
+  }else if(employee is Manager) {
+    Manager manager = employee as Manager;
+    print('hello manajer ${manager.name}');
+  }else{
+    print("Hello ${employee.name}");
   }
+}
 
 
 void main () {
