@@ -6,7 +6,7 @@ class Person {
 }
 
 class VicePresident extends Person {
-  VicePresident(String name) : super(name){
+  VicePresident(String name) :super(name){
     print("Create new VicePresidenst ${this.name}");
   }
 }
