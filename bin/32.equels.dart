@@ -5,4 +5,8 @@ void main () {
   Category category2 = Category("1", "Laptop");
 
   print(category == category2);
+  print(category == category2);
+
+  print(category.hashCode);
+  print(category2.hashCode);
 }
